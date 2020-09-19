@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Lobster&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+}
+
+section, footer {
+  margin-top: 50px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 25px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header #logo {
+  margin-left: 50px;
+}
+
+header #logo span {
+  font-family: "Lobster", sans-serif;
+  font-size: 2rem;
+}
+
+header #subtitle {
+  margin-right: 50px;
+}
+
+header #subtitle span {
+
+}
+
+section#intro {
+  display: flex;
+  border: 10px solid #000;
+  justify-content: space-evenly;
+  padding: 45px;
+  flex-wrap: wrap;
+}
+
+#intro_img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#intro_img img {
+  width: 300px;
+}
+
+#intro_bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+  padding: 25px;
+}
+
+#list_container {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#list_container #list_1 {
+  margin-right: 20px;
+}
+
+#gallery #images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#gallery #images > img {
+  width: 350px;
+  margin-top: 10px;
+}
+
+#social_icons {
+  border: 10px solid #000;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+#social_icons .icon {
+  width: 100px;
+  height: 100px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 1s;
+}
+
+#social_icons .icon:hover {
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  header #logo {
+    margin-left: 0;
+  }
+
+  header #subtitle {
+    margin-right: 0;
+  }
+}
