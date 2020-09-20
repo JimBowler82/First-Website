@@ -38,10 +38,6 @@ header #subtitle {
   margin-right: 50px;
 }
 
-header #subtitle span {
-
-}
-
 section#intro {
   display: flex;
   border: 10px solid #000;
@@ -81,14 +77,20 @@ section#intro {
 
 #gallery #images {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-#gallery #images > img {
-  width: 350px;
+#gallery #images .img_div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
   margin-top: 10px;
+}
+
+#social h3 {
+  padding: 10px;
 }
 
 #social_icons {
